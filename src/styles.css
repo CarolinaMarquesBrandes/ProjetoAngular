@@ -1,1 +1,145 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #985606;
+    overflow-x: hidden;
+    background-color: #e0e0e0;
+}
+
+.delimitador-conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-redes-sociais {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 4;
+}
+
+.container-redes-sociais a {
+    display: block;
+}
+
+h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    display: block;
+    width: 100px;
+    background-color: #ff7600;
+    border-color: #bf5901;
+}
+
+.btn-primary:hover {
+    background-color: #ffbd84;
+    color: #2e2e2e;
+    border-color: #bf5901;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a {
+    color: #984304;
+    font-size: 15.5px;
+    text-shadow: 1px 1px 2px #464646;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: background-color 2s ease-in-out 0.1s, color 2.1s ease-in 0.15s;
+}
+
+.menu a:hover {
+    background-image: linear-gradient(to bottom, #ffd7af, #ffb06b);
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    border-radius: 2%;
+    color: #2f2b2b;
+    text-decoration: none;
+}
+
+.container-logo-e-menu {
+    background-color: rgba(253, 248, 248, 0.81);
+    text-align: center;
+    box-shadow: 0.5px 0.5px 3px #383838;
+    padding: 10px 0;
+    position: static;
+}
+
+#logo {
+    width: 35%;
+}
+
+footer {
+    background-color: #ff851b;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+
+@media screen and (max-width: 1024px) {
+    #logo {
+        width: 40%;
+    }
+    #btn-menu {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .barra {
+        width: 40px;
+        height: 5px;
+        margin-bottom: 5px;
+        background-color: #ff851b;
+    }
+    .menu {
+        display: none;
+        background-color: #ff851b;
+        width: 70%;
+        text-align: center;
+        padding: 0;
+        position: absolute;
+        top: 10px;
+        right: 80px;
+    }
+    .menu a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    }
+    .menu:last-child {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 25px;
+    }
+    .flex-header {
+        justify-content: space-between;
+    }
+    #logo {
+        width: 80%;
+    }
+    footer {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,132 @@
+.container-logo-e-menu {
+    /* position: absolute; */
+    z-index: 3;
+}
+
+.banner {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+#banner1 {
+    background-image: url(~/assets/imgs/imgs-index/01-banner-index.jpg);
+    background-position: center;
+    opacity: 0.9;
+}
+
+#banner2 {
+    background-image: url(~/assets/imgs/imgs-index/02-banner.jpg);
+}
+
+#banner3 {
+    background-image: url(~/assets/imgs/imgs-index/03-banner.jpg);
+}
+
+.quemSomos {
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 40vh;
+    color: #261102;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quemSomos h1 {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.quemSomos p {
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+}
+
+.nossosServicos {
+    margin: 80px 0;
+}
+
+.nossosServicos h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.segundo-banner {
+    margin: 40px 0 60px;
+    height: 300px;
+    background-image: url(~/assets/imgs/imgs-index/spa-3184610_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.7;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.segundo-banner h1 {
+    color: #ffe9d6;
+    font-size: 36px;
+    text-shadow: 1px 1px 2px #faf6f6;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        height: 50vh;
+        background-attachment: scroll;
+    }
+    .quemSomos {
+        top: 15vh;
+    }
+    .quemSomos h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+    .quemSomos p {
+        font-size: 18px;
+        text-align: center;
+        width: 70%;
+    }
+    .segundo-banner {
+        background-attachment: scroll;
+        background-position: center;
+        height: 250px;
+    }
+    .coluna-secao {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .coluna-secao {
+        width: 100%;
+    }
+    .quemSomos {
+        margin-top: 10px;
+    }
+    .quemSomos h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .quemSomos p {
+        font-size: 14px;
+        text-align: center;
+        width: 80%;
+    }
+    .segundo-banner h1 {
+        font-size: 20px;
+    }
+}

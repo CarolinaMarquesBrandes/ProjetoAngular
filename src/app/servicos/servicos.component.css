@@ -1,0 +1,49 @@
+.menu-servicos {
+    background-color: #ff851b;
+    padding: 15px;
+    text-align: center;
+    margin: 5px 0 40px;
+}
+
+.menu-servicos h1 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.menu-servicos a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu-servicos a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #eef0f2;
+    display: block;
+    transition: 0.5s;
+    margin: 2px auto;
+}
+
+.menu-servicos a:hover::after {
+    width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 767px) {
+    .menu-servicos {
+        display: none;
+    }
+    .servicos-flex {
+        margin-top: 40px;
+    }
+}

@@ -1,4 +1,4 @@
-.flex-contato{
+.flex-contato {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,99 +7,92 @@
     font-size: 18px;
 }
 
-adress{
+adress {
     width: 60%;
 }
 
-.flex-contato li{
+.flex-contato li {
     list-style: none;
     margin-bottom: 20px;
 }
 
-#mapa{
+#mapa {
     width: 40%;
     height: 400px;
 }
 
-form{
+form {
     margin-top: 40px;
     padding: 30px 0;
 }
 
-
-.container-campos-formulario{
+.container-campos-formulario {
     margin: 0 auto;
 }
 
-h2{
+h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-input{
+input {
     width: 70%;
     height: 35px;
     display: block;
     margin: 10px auto;
 }
 
-
-textarea{
+textarea {
     width: 70%;
     display: block;
     margin: 10px auto;
 }
 
-.enviar-form{
+.enviar-form {
     margin: 15px auto;
 }
 
+
 /* MEDIA QUERIES */
+
+
 /* PARA TELAS DE NO MAX ATÉ 1024 */
+
 @media screen and (max-width: 1024px) {
-    .flex-contato{
+    .flex-contato {
         flex-direction: column;
     }
-
-    adress, #mapa{
+    adress,
+    #mapa {
         width: 100%;
     }
-
-    adress
-        margin-bottom: 50px;
-    }
+    /*adress margin-bottom: 50px;*/
+}
 
 @media screen and (max-width: 767px) {
-    .flex-contato{
+    .flex-contato {
         font-size: 11px;
         align-items: flex-start;
     }
-    
-     adress, #mapa{
+    adress,
+    #mapa {
         width: 90%;
     }
-
-    
-    adress{
+    adress {
         text-align: justify;
     }
-    
-    .flex-contato ul{
-        margin-left:0;
+    .flex-contato ul {
+        margin-left: 0;
         padding-left: 0;
     }
-    
-    .container-campos-formulario{
+    .container-campos-formulario {
         margin: 0;
     }
-    
-    input, textarea{
+    input,
+    textarea {
         width: 90%;
     }
-    
-    h2{
+    h2 {
         font-size: 18px;
     }
-   
 }
-

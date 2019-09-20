@@ -1,0 +1,55 @@
+.flex-secoes-inicio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 100px auto;
+}
+
+.coluna-secao {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coluna-secao h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.coluna-secao img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    border: 1px solid #a34d04;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+
+@media screen and (max-width: 1024px) {
+    .coluna-secao {
+        width: 45%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .coluna-secao {
+        width: 100%;
+    }
+    .coluna-secao h3 {
+        font-size: 20px;
+    }
+    .coluna-secao p {
+        width: 75%;
+    }
+    .coluna-secao img {
+        width: 75%;
+    }
+}

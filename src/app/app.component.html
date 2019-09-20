@@ -1,3 +1,69 @@
-<h1>
-  {{title}}
-</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Studio Postural</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="../assets/css/estilo_comum.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/servicos.css">
+    <link rel="stylesheet" href="../assets/css/contato.css">
+    <link rel="stylesheet" href="../assets/css/nossos-servicos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            AOS.init();
+
+            $("#btn-menu").click(function() {
+                $(".menu").slideToggle();
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <header class="container-logo-e-menu">
+        <div class="delimitador-conteudo flex-header">
+            <img id="logo" src="assets/imgs/logo%20(sem%20fundo).png" alt="logo Studio Postural">
+
+            <div id="btn-menu">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+
+            <nav class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Serviços</a>
+                <a href="#">Promoções</a>
+                <a href="#">Profissionais</a>
+                <a href="#">Blog</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-redes-sociais">
+        <a href="https://www.facebook.com/pages/Studio-Postural/269120843260376?ref=hl" target="_blank"><img src="assets/imgs/icons8-facebook-48.png" alt="ícone facebook"></a>
+
+        <a href="http://instagram.com/studio_postural" target="_blank"><img src="assets/imgs/icons8-instagram-filled-48.png" alt="icone instagram"></a>
+    </div>
+    <router-outlet></router-outlet>
+    <footer>
+        <div class="delimitador-conteudo">
+            <p>Endereço: Av. Ayrton Senna 2.150 - CasaShopping Bloco A Sala 210 <br> Barra da Tijuca Rio de Janeiro RJ <br> Tel: (21) 2431-6741 / WhatsApp: (21) 9 9965-4339 <br>Horário de agendamento: Seg à Sex de 08:30h até 17h</p>
+        </div>
+    </footer>
+
+</body>

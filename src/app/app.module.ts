@@ -11,11 +11,11 @@ import { PromocoesComponent } from './promocoes/promocoes.component';
 import { ProfissionaisComponent } from './profissionais/profissionais.component';
 import { NossosServicosComponent } from './nossos-servicos/nossos-servicos.component';
 import { IndexComponent } from './index/index.component';
-import { HeaderEMenuComponent } from './header-e-menu/header-e-menu.component';
-import { FooterComponent } from './footer/footer.component';
 import { ContatoComponent } from './contato/contato.component';
 import { BlogComponent } from './blog/blog.component';
 import { RouterModule, Routes } from '@angular/router';
+import {APP_BASE_HREF} from '@angular/common';
+import { AppRoutingModule } from './app-routing.module';
 
 const appRoutes: Routes = [
   { path: '', pathMatch: 'full', component: IndexComponent },
@@ -25,11 +25,8 @@ const appRoutes: Routes = [
   { path: 'promocoes', component: PromocoesComponent },
   { path: 'profissionais', component: ProfissionaisComponent },
   { path: 'nossos-servicos', component: NossosServicosComponent },
-  { path: 'header-e-menu', component: HeaderEMenuComponent },
-  { path: 'footer', component: FooterComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'blog', component: BlogComponent }
- 
 ];
 
 @NgModule({
@@ -42,18 +39,15 @@ const appRoutes: Routes = [
     ProfissionaisComponent,
     NossosServicosComponent,
     IndexComponent,
-    HeaderEMenuComponent,
-    FooterComponent,
     ContatoComponent,
     BlogComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
+    AppRoutingModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue : '' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
