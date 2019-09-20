@@ -1,0 +1,105 @@
+.flex-contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    height: 400px;
+    font-size: 18px;
+}
+
+adress{
+    width: 60%;
+}
+
+.flex-contato li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#mapa{
+    width: 40%;
+    height: 400px;
+}
+
+form{
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+
+.container-campos-formulario{
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 70%;
+    height: 35px;
+    display: block;
+    margin: 10px auto;
+}
+
+
+textarea{
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+}
+
+.enviar-form{
+    margin: 15px auto;
+}
+
+/* MEDIA QUERIES */
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+@media screen and (max-width: 1024px) {
+    .flex-contato{
+        flex-direction: column;
+    }
+
+    adress, #mapa{
+        width: 100%;
+    }
+
+    adress
+        margin-bottom: 50px;
+    }
+
+@media screen and (max-width: 767px) {
+    .flex-contato{
+        font-size: 11px;
+        align-items: flex-start;
+    }
+    
+     adress, #mapa{
+        width: 90%;
+    }
+
+    
+    adress{
+        text-align: justify;
+    }
+    
+    .flex-contato ul{
+        margin-left:0;
+        padding-left: 0;
+    }
+    
+    .container-campos-formulario{
+        margin: 0;
+    }
+    
+    input, textarea{
+        width: 90%;
+    }
+    
+    h2{
+        font-size: 18px;
+    }
+   
+}
+

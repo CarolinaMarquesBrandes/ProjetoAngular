@@ -1,0 +1,45 @@
+.servicos-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coluna-servicos h2{
+    font-size: 25px;
+}
+
+.coluna-servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 18%;
+}
+
+.coluna-servicos img{
+    display:block;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border: 1px solid #ff6c00;
+    box-shadow: 1px 1px 2px #363636;
+    margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES */
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+@media screen and (max-width: 1024px) {
+    .servicos-flex{
+        justify-content: space-around;
+    }
+    
+    .coluna-servicos{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .coluna-servicos{
+        width: 100%;
+    }
+}

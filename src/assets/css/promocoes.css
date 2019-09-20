@@ -1,0 +1,44 @@
+.flex-promocoes{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.container-promocoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #aa5207;
+    background-color: #ed7b48;
+    color: white;
+}
+
+.container-promocoes img{
+    width:100%;  
+    max-width: 300px;
+    border: 1px solid #fffdfb;
+    box-shadow: 1px 1px 2px #2a2a2a;
+    margin: 20px 0;
+}
+
+/* MEDIA QUERIES */
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+@media screen and (max-width: 1024px) {
+    .container-promocoes{
+        width: 60%;
+        margin-bottom: 30px;
+    }  
+}
+
+@media screen and (max-width: 767px) {
+    .container-promocoes{
+        width: 90%;
+    } 
+    
+    .flex-promocoes{
+        justify-content: flex-start;
+    }
+}

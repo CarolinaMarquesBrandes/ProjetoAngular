@@ -1,0 +1,44 @@
+.flex-quem-somos{
+    display: flex;
+    justify-content:space-between;
+    margin: 50px auto;
+}
+
+.quemSomos{
+    width: 40%;
+    color: #893a00;
+}
+
+.quemSomos h1{
+    text-align: center;
+}
+
+.foto-estudio{
+    width: 50%;
+}
+
+.foto-estudio img{
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 1px 1px 2px #414141;
+}
+
+/* MEDIA QUERIES */
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+@media screen and (max-width: 1024px) {
+    .flex-quem-somos{
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .quemSomos, .foto-estudio{
+        width: 80%;
+        text-align: center;
+    }
+    
+    .quemSomos{
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {}

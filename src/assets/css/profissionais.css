@@ -1,0 +1,49 @@
+.flex-profissionais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px auto;
+}
+
+.coluna-profissional{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.coluna-profissional img{
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border: 1px solid #cc5802;
+}
+
+.coluna-profissional h2{
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+/* MEDIA QUERIES */
+/* PARA TELAS DE NO MAX ATÉ 1024 */
+@media screen and (max-width: 1024px) {
+    .flex-profissionais{
+        justify-content: space-around;
+    }
+    .coluna-profissional{
+        width: 40%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .flex-profissionais{
+        justify-content: flex-start;
+    }
+    .coluna-profissional{
+        width: 90%;
+    }
+   
+}
